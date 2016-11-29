@@ -1,0 +1,350 @@
+<!doctype html>
+<html class="export" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="filter &amp; sort magical layouts">
+
+  <title>Isotope</title>
+
+    <!-- Isotope does not require any CSS files -->
+    <link rel="stylesheet" href="css/isotope-docs.css?3" media="screen">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+
+
+</head>
+<body class="page--index">
+
+<!--<ul class="page-nav" data-js="page-nav">-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#install">Install</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#download">Download</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#cdn">CDN</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#package-managers">Package managers</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#license">License</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#commercial-license">Commercial license</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#open-source-license">Open source license</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#getting-started">Getting started</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#html">HTML</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#css">CSS</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#initialize-with-jquery">Initialize with jQuery</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#initialize-with-vanilla-javascript">Initialize with Vanilla JavaScript</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h3"><a href="#initialize-in-html">Initialize in HTML</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#next">Next</a></li>-->
+  <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#isotope-in-use">Isotope in use</a></li>-->
+<!--</ul>-->
+
+
+<h1>Isotope - filtering &amp; sorting</h1>
+<h2>Filter</h2>
+<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".logo">Logos</button>
+  <button class="button" data-filter=".leather">Leatherwork</button>
+  <!--<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>-->
+  <!--<button class="button" data-filter=":not(.transition)">not transition</button>-->
+  <button class="button" data-filter=".print">Publication Design</button>
+  <button class="button" data-filter=".artDirection">Art Direction</button>
+  <!--<button class="button" data-filter="numberGreaterThan50">number > 50</button>-->
+  <!--<button class="button" data-filter="ium">name ends with &ndash;ium</button>-->
+</div>
+
+<h2>Sort</h2>
+<div id="sorts" class="button-group">  <button class="button is-checked" data-sort-by="original-order">original order</button>
+  <button class="button" data-sort-by="name">name</button>
+  <button class="button" data-sort-by="symbol">symbol</button>
+  <button class="button" data-sort-by="number">number</button>
+  <button class="button" data-sort-by="weight">weight</button>
+  <button class="button" data-sort-by="category">category</button>
+
+</div>
+
+<p><button class="shuffle-button">Shuffle</button></p>
+
+
+  <div class="grid">
+
+  <!--<div class="element-item artDirection" data-category="artDirection">-->
+      <!--<img class="image" src="images/BayfrontFrontFinal.jpg">-->
+      <!--<h3 class="name">Mercury</h3>-->
+      <!--<p class="symbol">Hg</p>-->
+      <!--<p class="number">80</p>-->
+      <!--<p class="weight">200.59</p>-->
+    <!--</div>-->
+
+    <!--<div class="element-item metalloid " data-category="metalloid">-->
+      <!--<h3 class="name">Tellurium</h3>-->
+      <!--<p class="symbol">Te</p>-->
+      <!--<p class="number">52</p>-->
+      <!--<p class="weight">127.6</p>-->
+    <!--</div>-->
+    <!--<div class="element-item post-transition metal " data-category="post-transition">-->
+      <!--<h3 class="name">Bismuth</h3>-->
+      <!--<p class="symbol">Bi</p>-->
+      <!--<p class="number">83</p>-->
+      <!--<p class="weight">208.980</p>-->
+    <!--</div>-->
+
+<div class="in-use-grid go-wide" data-js="in-use-grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+
+
+  <!-- Example of Weblink-->
+
+  <!--<a class="in-use-grid__item" href="http://www.nytimes.com/interactive/2012/12/24/sports/basketball/pick-your-all-time-new-york-city-nba-team.html">-->
+    <!--<p class="in-use-grid__item__title">New York Times</p>-->
+    <!--<img class="in-use-grid__item__image" src="http://i.imgur.com/a8DsGOg.jpg">-->
+  <!--</a>-->
+
+  <!-- BayfrontFrontFinal-->
+    <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/BayfrontFrontFinal.jpg" data-lightbox="artDirection">
+      <p class="in-use-grid__item__title">Bayfront Poster</p>
+      <img class="in-use-grid__item__image" src="images/BayfrontFrontFinal.jpg">
+    </a>
+
+  <!-- Berger's Furniture Refinishing logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Bergers%20Furniture%20Logo.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Bergers Furniture Refinishing logo</p>
+    <img class="in-use-grid__item__image" src="images/Bergers%20Furniture%20Logo.jpg">
+  </a>
+
+  <!-- CRE Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/CRE_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Investment Guide Illustration</p>
+    <img class="in-use-grid__item__image" src="images/CRE_Cover.jpg">
+  </a>
+
+  <!-- MN Selects-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/MN Selects Logo-Email.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Minnesota Selects logo</p>
+    <img class="in-use-grid__item__image" src="images/MN Selects Logo-Email.jpg">
+  </a>
+
+  <!-- JHS Logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/JHS_100_Year_Logo_FINAL.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">JHS 100 Year Logo</p>
+    <img class="in-use-grid__item__image" src="images/JHS_100_Year_Logo_FINAL.jpg">
+  </a>
+
+  <!-- Light Brown Dart Case-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Case_Lt%20Brown.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Light Brown Dart Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Case_Lt%20Brown.jpg">
+  </a>
+
+  <!-- Brooklyn MN Fair-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/Brooklyn%20Fair%20Flyer.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">Brooklyn Fair Flyer</p>
+    <img class="in-use-grid__item__image" src="images/Brooklyn%20Fair%20Flyer.jpg">
+  </a>
+
+  <!-- Guv Shirt-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/GuvShirt.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">Guv's Place Dart Shirt</p>
+    <img class="in-use-grid__item__image" src="images/GuvShirt.jpg">
+  </a>
+
+  <!-- Polar Devils-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Polar%20Devils.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Polar Devils Logo</p>
+    <img class="in-use-grid__item__image" src="images/Polar%20Devils.jpg">
+  </a>
+
+  <!-- Leather Tote-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Tote%20Bag.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Leather Tote Bag</p>
+    <img class="in-use-grid__item__image" src="images/Tote%20Bag.jpg">
+  </a>
+
+  <!-- Chaser's Logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Chasers%20Logo.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Chaser's Darts logo</p>
+    <img class="in-use-grid__item__image" src="images/Chasers%20Logo.jpg">
+  </a>
+
+  <!-- Dart Case Black Wallet-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Case_Black%20Wallet.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Black Leather Dart Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Case_Black%20Wallet.jpg">
+  </a>
+
+  <!-- Dart Case Black-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Case_Black.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Black Leather Dart Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Case_Black.jpg">
+  </a>
+
+  <!-- Stockyard Days-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/StockyardDays.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Stockyard Days Cover</p>
+    <img class="in-use-grid__item__image" src="images/StockyardDays.jpg">
+  </a>
+
+  <!-- Dart Case Brown-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Case_Brown.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Brown Leather Dart Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Case_Brown.jpg">
+  </a>
+
+  <!-- Dart Case Tank-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Case_Tank.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">First Leather Dart Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Case_Tank.jpg">
+  </a>
+
+  <!-- Ramsey County Fair-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/RCFair.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Ramsey County Fair Cover</p>
+    <img class="in-use-grid__item__image" src="images/RCFair.jpg">
+  </a>
+
+  <!-- Dart Cases-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Cases.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Leather Dart Cases</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Cases.jpg">
+  </a>
+
+  <!-- Klinger Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Klinger_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Apple Valley Magazine Cover</p>
+    <img class="in-use-grid__item__image" src="images/Klinger_Cover.jpg">
+  </a>
+
+  <!-- Moe Outdoors Logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Moe%20Outdoors.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Moe Outdoors logo</p>
+    <img class="in-use-grid__item__image" src="images/Moe%20Outdoors.jpg">
+  </a>
+
+  <!-- Progress Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Progress.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Progress 2012 Cover</p>
+    <img class="in-use-grid__item__image" src="images/Progress.jpg">
+  </a>
+
+  <!-- Dart Shaft Case-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Shaft%20Case.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Dart Shaft Case</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Shaft%20Case.jpg">
+  </a>
+
+  <!-- Dart Soup Biz Card-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/Dart%20Soup%20Biz%20Card.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">Dart Soup Business Card</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Soup%20Biz%20Card.jpg">
+  </a>
+
+  <!-- Woodbury Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Woodbury_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Woodbury Magazine Cover</p>
+    <img class="in-use-grid__item__image" src="images/Woodbury_Cover.jpg">
+  </a>
+
+  <!-- Dart Soup Logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Dart%20Soup%20Logo.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Dart Soup Logo</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Soup%20Logo.jpg">
+  </a>
+
+  <!-- Lake Elmo Days Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/LakeElmo.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Lake Elmo Days Cover</p>
+    <img class="in-use-grid__item__image" src="images/LakeElmo.jpg">
+  </a>
+
+  <!-- Dart Tip Case-->
+  <a class="in-use-grid__item element-item leather" data-category="leather" href="images/Dart%20Tip%20Case_2.jpg" data-lightbox="leather">
+    <p class="in-use-grid__item__title">Tip Case for Darts</p>
+    <img class="in-use-grid__item__image" src="images/Dart%20Tip%20Case_2.jpg">
+  </a>
+
+  <!-- Lakeville Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Lakeville_Prep_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Lakeville Magazine Prep Sports Cover</p>
+    <img class="in-use-grid__item__image" src="images/Lakeville_Prep_Cover.jpg">
+  </a>
+
+  <!-- Duluth Running Co-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/Duluth%20Running-1.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">Duluth Running Co. flyer</p>
+    <img class="in-use-grid__item__image" src="images/Duluth%20Running-1.jpg">
+  </a>
+
+  <!-- FFB Logo-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/FFB.jpg" data-lightbox="logos" data-lightbox="logos">
+    <p class="in-use-grid__item__title">FFB Baseball Hat Logo</p>
+    <img class="in-use-grid__item__image" src="images/FFB.jpg">
+  </a>
+
+  <!-- Sherwood Lounge Softball Jersey-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Final%20Logo.jpg" data-lightbox="logos" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Sherwood Lounge Softball Jersey</p>
+    <img class="in-use-grid__item__image" src="images/Final%20Logo.jpg">
+  </a>
+
+  <!-- Saint Peter Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Saint_Peter_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Eden Prairie Magazine Cover</p>
+    <img class="in-use-grid__item__image" src="images/Saint_Peter_Cover.jpg">
+  </a>
+
+  <!-- Johnson Program Cover-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/Johnson%20Program%20Cover.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">Showdown in HockeyTown Program</p>
+    <img class="in-use-grid__item__image" src="images/Johnson%20Program%20Cover.jpg">
+  </a>
+
+  <!-- Eagan Cover-->
+  <a class="in-use-grid__item element-item print" data-category="print" href="images/Eagan_Prep_Cover.jpg" data-lightbox="print">
+    <p class="in-use-grid__item__title">Eagan Magazine Cover</p>
+    <img class="in-use-grid__item__image" src="images/Eagan_Prep_Cover.jpg">
+  </a>
+
+  <!-- JHS 100 Year Poster-->
+  <a class="in-use-grid__item element-item artDirection" data-category="artDirection" href="images/Poster.jpg" data-lightbox="artDirection">
+    <p class="in-use-grid__item__title">JHS 100 Year Poster</p>
+    <img class="in-use-grid__item__image" src="images/Poster.jpg">
+  </a>
+
+  <!-- Doghouse Darts-->
+  <a class="in-use-grid__item element-item logo" data-category="logo" href="images/Doghouse%20Darts.jpg" data-lightbox="logos">
+    <p class="in-use-grid__item__title">Doghouse Darts</p>
+    <img class="in-use-grid__item__image" src="images/Doghouse%20Darts.jpg">
+  </a>
+
+</div>
+  </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <!--<footer class="site-footer">-->
+  <!-- -->
+    <!--<div class="container">-->
+  <!-- -->
+      <!--<p class="site-footer__copy">Metafizzy makes delightful UI libraries &amp; logos</p>-->
+
+  <!-- -->
+    <!--</div>-->
+  <!-- -->
+  <!--</footer>-->
+
+<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
+<!-- Isotope does NOT require jQuery. But it does make things easier -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/isotope-docs.min.js?3"></script>
+<script src="js/index.js"></script>
+<script src="js/lightbox.js"></script>
+
+
+
+</body>
+</html>
+
+
