@@ -8,18 +8,18 @@ var $grid = $('.grid').isotope({
   layoutMode: 'masonry',
   masonry: {
     columnWidth: '.element-item'
-  },
-  getSortData: {
-    name: '.name',
-    symbol: '.symbol',
-    number: '.number parseInt',
-    category: '[data-category]',
-    weight: function( itemElem ) {
-      var weight = $( itemElem ).find('.weight').text();
-      return parseFloat( weight.replace( /[\(\)]/g, '') );
-    }
-  },
-  sortBy : 'random'
+  }
+  //getSortData: {
+  //  name: '.name',
+  //  symbol: '.symbol',
+  //  number: '.number parseInt',
+  //  category: '[data-category]',
+  //  weight: function( itemElem ) {
+  //    var weight = $( itemElem ).find('.weight').text();
+  //    return parseFloat( weight.replace( /[\(\)]/g, '') );
+  //  },
+  //  sortBy : 'random'
+  //},
 });
 
 // filter functions
@@ -64,7 +64,7 @@ $('.shuffle-button').on( 'click', function() {
   $grid.isotope('shuffle');
 });
 
-// change is-checked class on buttons
-$(window).resize(function() {
-  $container.isotope( 'shuffle', function() {});
-});
+//// change is-checked class on buttons
+//$(window).resize(function() {
+//  $('.grid').isotope('shuffle', function() {});
+//});

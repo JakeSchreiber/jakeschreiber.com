@@ -423,28 +423,50 @@ textarea {
 
 .button {
   display: inline-block;
-  padding: 5px 15px;
-  margin-bottom: 10px;
-  background-color: #F8F8F8;
-  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
-  border: 1px solid #CCC;
-  border-radius: 5px;
+  height: 25px;
+  padding: 0px 15px;
+  /*margin-bottom: 10px;*/
+  background-color: rgb(221, 221, 221);
+  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.25) );
+  border: 0px solid #CCC;
+  color: white;
+  /*border-radius: 5px;*/
   cursor: pointer;
 }
 
+.shuffle-button {
+  display: inline-block;
+  height: 25px;
+  padding: 0px 15px;
+  /*margin-bottom: 10px;*/
+  margin-left: .4em;
+  background: rgb(0, 80, 112);
+  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
+  border: 0px solid #CCC;
+  color: white;
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  /*float: right;*/
+}
+
 .button:hover {
-  background-color: #8CF;
+  background-color: #cdcdcd;
+}
+
+.shuffle-button:hover {
+  background-color: rgba(0, 80, 112, 0.48);
 }
 
 .button.is-checked,
 .button.is-selected {
-  background-color: #19F;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
+  /*border: 2px;*/
 }
 
 .button:active {
   color: white;
-  background-color: #59F;
+  background-color: rgba(0, 0, 0, 0.52);
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
@@ -465,8 +487,8 @@ textarea {
   margin-left: -1px;
 }
 
-.button-group .button:first-child { border-radius: 5px 0 0 5px; }
-.button-group .button:last-child { border-radius: 0 5px 5px 0; }
+/*.button-group .button:first-child { border-radius: 5px 0 0 5px; }*/
+/*.button-group .button:last-child { border-radius: 0 5px 5px 0; }*/
 
 /* commercial-license-agreement
 ------------------------- */
@@ -875,8 +897,8 @@ html.export {
 }
 
 body {
-  color: #EEE;
-  background: #262524;
+  color: #d0cece;
+  background: #ffffff;
 }
 
 /* ---- links ---- */
@@ -906,12 +928,18 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: bold;
-  font-size: 2.65em;
+  font-size: 2em;
   margin-bottom: 0.2em;
-  margin-top: 2.0em;
+  margin-top: 5.0em;
+  margin-left: .2em;
+  color: rgb(0, 80, 112);
 }
 
-h1:first-child { margin-top: 0; }
+h1:first-child {
+  /*margin: 1em auto;*/
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
 
 h2 {
   font-weight: bold;
@@ -928,6 +956,12 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.1em;
+}
+
+/* ---- filters list ---- */
+#filters {
+  margin-left: .4em;
+  margin-right: 2em;
 }
 
 /* ---- lists ---- */
@@ -1465,6 +1499,10 @@ you can use the generic selector below, but it's slower:
   border-color: #222;
 }
 
+.shuffle-button {
+  border-color: #222;
+}
+
 /* buy-button
 ------------------------- */
 
@@ -1620,10 +1658,10 @@ you can use the generic selector below, but it's slower:
 
 .grid {
   /*border: 2px solid #484542;*/
-  background: hsla(0, 0%, 0%, 0.15);
+  background: hsla(0, 0%, 0%, 0);
   position: relative;
   margin: auto;
-  /*height: 100%;*/
+  height: inherit;
   /*padding: 3%;*/
 }
 
@@ -1973,18 +2011,39 @@ you can use the generic selector below, but it's slower:
   background: #ffffff;
   float: left;
   /*margin-bottom: 20px;*/
-  border-radius: 5px;
+  /*border-radius: 5px;*/
+  box-shadow: 3px 5px 5px #d6d4d4;;
+}
+
+.in-use-grid .logo{
+  background: rgb(0, 80, 112);
+}
+
+.in-use-grid .artDirection{
+  background: rgb(25, 73, 112);
+}
+
+.in-use-grid .print{
+   background: rgb(0, 102, 112);
+ }
+
+.in-use-grid .leather{
+  background: rgb(6, 101, 90);
 }
 
 .in-use-grid__item__title {
   margin: 0;
   padding: 10px;
+  color: rgba(255, 255, 255, 0.5)
 }
 
 .in-use-grid__item__image {
   display: block;
   max-width: 100%;
-  border-radius: 0 0 5px 5px;
+  /*border-radius: 0 0 5px 5px;*/
+  /*box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);*/
+  box-shadow: inset 0 0 10px #000000;
+
 }
 
 /* nav
@@ -2446,7 +2505,7 @@ you can use the generic selector below, but it's slower:
     /*background: #161615;*/
     float: left;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 0;
   }
 
   .in-use-grid__item__title {
@@ -2457,14 +2516,25 @@ you can use the generic selector below, but it's slower:
   .in-use-grid__item__image {
     display: block;
     max-width: 100%;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0;
   }
 
 }
 
 
-/*/!*Phone Screen Size*!/*/
-/*@media only screen and (max-width: 500px)  {*/
+/*Phone Screen Size*/
+@media only screen and (max-width: 500px)  {
+
+  #filters {
+    margin: 0;
+  }
+
+  .button-group .button {
+    display: block;
+    width: 100%;
+    height: 2em;
+    /*margin: 5px 0;*/
+  }
 
   /*.in-use-grid .grid-sizer,*/
   /*.in-use-grid__item { width: 97%; }*/
@@ -2488,4 +2558,4 @@ you can use the generic selector below, but it's slower:
     /*border-radius: 0 0 5px 5px;*/
   /*}*/
 
-/*}*/
+}
