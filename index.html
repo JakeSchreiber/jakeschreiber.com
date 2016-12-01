@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="filter &amp; sort magical layouts">
 
-  <title>Isotope</title>
+  <title>J. Schreiber Portfolio</title>
 
     <!-- Isotope does not require any CSS files -->
     <link rel="stylesheet" href="css/isotope-docs.css?3" media="screen">
@@ -35,10 +35,14 @@
   <!--<li class="page-nav__item page-nav__item&#45;&#45;h2"><a href="#isotope-in-use">Isotope in use</a></li>-->
 <!--</ul>-->
 
+<div id="main">
 
 <h1>THE DESIGN PORTFOLIO OF JAKE SCHREIBER</h1>
 <!--<h2>Click to Filter</h2>-->
-<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+<div id="filters" class="button-group sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <button class="button is-checked" data-filter="*">show all</button>
   <button class="button" data-filter=".logo">Logos</button>
   <button class="button" data-filter=".leather">Leatherwork</button>
   <!--<button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>-->
@@ -51,6 +55,8 @@
 </div>
 
 <p><button class="shuffle-button">Shuffle</button></p>
+
+<span onclick="openNav()">Filter</span>
 
 
 <!--<h2>Sort</h2>-->
@@ -325,7 +331,8 @@
 
 
     </div>
-  </div>
+
+
 
   <!--<footer class="site-footer">-->
   <!-- -->
@@ -345,6 +352,8 @@
 <script src="js/isotope-docs.min.js?3"></script>
 <script src="js/index.js"></script>
 <script src="js/lightbox.js"></script>
+<script src="js/bigslide.js"></script>
+
 
 
 
