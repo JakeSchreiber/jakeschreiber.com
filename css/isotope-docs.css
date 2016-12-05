@@ -2535,6 +2535,7 @@ you can use the generic selector below, but it's slower:
 
   .in-use-grid__item__title {
     margin: 0;
+    display: none;
     padding: 10px;
   }
 
@@ -2629,7 +2630,40 @@ you can use the generic selector below, but it's slower:
   }
 
   .filterButton {
-    display: block;
+    display: inline-block;
+    height: 50px;
+    float: left;
+    left: 0;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    background-color: #111111;
+    z-index: 100;
+    width: 50%;
+    margin-left: 0;
+    text-align: center;
+    border: 0;
   }
+
+  .shuffle-button {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    color: white;
+    background-color: #005070;
+    z-index: 100;
+    width: 50%;
+    margin-left: 0;
+  }
+
+  /*span.filterButton {*/
+    /*margin-left: -118px;*/
+    /*-ms-transform: rotate(90deg); /!* IE 9 *!/*/
+    /*-webkit-transform: rotate(90deg); /!* Chrome, Safari, Opera *!/*/
+    /*transform: rotate(90deg);*/
+  /*}*/
 
 }
