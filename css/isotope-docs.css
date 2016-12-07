@@ -2517,7 +2517,7 @@ you can use the generic selector below, but it's slower:
 
 
 /*Tablet Screen Size*/
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 500px)  {
 
   .in-use-grid .grid-sizer,
   .in-use-grid__item {
@@ -2545,11 +2545,11 @@ you can use the generic selector below, but it's slower:
     border-radius: 0;
   }
 
-}
+/*}*/
 
 
-/*Phone Screen Size*/
-@media only screen and (max-width: 500px)  {
+/*/!*Phone Screen Size*!/*/
+/*@media only screen and (max-width: 500px)  {*/
 
   #filters {
     margin: 0;
@@ -2624,7 +2624,7 @@ you can use the generic selector below, but it's slower:
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0px;
     font-size: 36px;
     margin-left: 50px;
   }
@@ -2657,6 +2657,10 @@ you can use the generic selector below, but it's slower:
     z-index: 100;
     width: 50%;
     margin-left: 0;
+  }
+
+  .shuffle-button:hover {
+    background-color: rgba(0, 80, 112, 1);
   }
 
   /*span.filterButton {*/
