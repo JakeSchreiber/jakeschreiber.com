@@ -2568,7 +2568,42 @@ you can use the generic selector below, but it's slower:
 
 
 /*Tablet Screen Size*/
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
+  .button {
+    font-size: 90%;
+  }
+}
+  /*.in-use-grid .grid-sizer,*/
+  /*.in-use-grid__item {*/
+    /*/!*width: 45%;*!/*/
+    /*margin-left: 2%;*/
+  /*}*/
+  /*.in-use-grid .gutter-sizer { width: 2%; }*/
+
+  /*.in-use-grid__item {*/
+    /*/!*background: #161615;*!/*/
+    /*float: left;*/
+    /*margin-bottom: 20px;*/
+    /*border-radius: 0;*/
+  /*}*/
+
+  /*.in-use-grid__item__title {*/
+    /*margin: 0;*/
+    /*display: none;*/
+    /*padding: 10px;*/
+  /*}*/
+
+  /*.in-use-grid__item__image {*/
+    /*display: block;*/
+    /*max-width: 100%;*/
+    /*border-radius: 0;*/
+  /*}*/
+
+/*}*/
+
+
+/*Phone Screen Size*/
+@media only screen and (max-width: 500px)  {
 
   .in-use-grid .grid-sizer,
   .in-use-grid__item {
@@ -2577,33 +2612,9 @@ you can use the generic selector below, but it's slower:
   }
   .in-use-grid .gutter-sizer { width: 2%; }
 
-  .in-use-grid__item {
-    /*background: #161615;*/
-    float: left;
-    margin-bottom: 20px;
-    border-radius: 0;
-  }
-
-  .in-use-grid__item__title {
-    margin: 0;
-    display: none;
-    padding: 10px;
-  }
-
-  .in-use-grid__item__image {
-    display: block;
-    max-width: 100%;
-    border-radius: 0;
-  }
-
-}
-
-
-/*Phone Screen Size*/
-@media only screen and (max-width: 500px)  {
-
   #filters {
     margin: 0;
+    width: 0;
   }
 
   .button-group .button {
