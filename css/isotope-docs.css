@@ -424,6 +424,7 @@ textarea {
 #main {
   transition: margin-left .5s;
   padding: 20px;
+  /*background-color: black;*/
 }
 
 /* button
@@ -434,27 +435,35 @@ textarea {
   height: 25px;
   padding: 0px 15px;
   /*margin-bottom: 10px;*/
-  background-color: rgb(221, 221, 221);
-  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.25) );
+  background-color: #99D3DF;
+  /*background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.25) );*/
   border: 0px solid #CCC;
   color: white;
   /*border-radius: 5px;*/
   cursor: pointer;
+  width: 20%;
 }
 
 .shuffle-button {
   display: inline-block;
-  height: 25px;
-  padding: 0px 15px;
+  /*height: 25px;*/
+  padding: 6px 15px 2px 15px;
   /*margin-bottom: 10px;*/
   margin-left: .4em;
-  background: rgb(0, 80, 112);
-  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
+  margin-top: .5em;
+  background: #88BBD6;
+  /*background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );*/
   border: 0px solid #CCC;
   color: white;
-  /*border-radius: 5px;*/
+  border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   /*float: right;*/
+}
+
+
+.button.shuffle-button {
+  text-align: top;
+  margin-top: -5px;
 }
 
 .closebtn {
@@ -470,12 +479,14 @@ textarea {
 }
 
 .shuffle-button:hover {
-  background-color: rgba(0, 80, 112, 0.48);
+  /*background-color: rgba(0, 80, 112, 0.48);*/
+  box-shadow: 2px 2px 5px black;
+
 }
 
 .button.is-checked,
 .button.is-selected {
-  background-color: #ffffff;
+  background-color: white;
   color: #000000;
   /*border: 2px;*/
 }
@@ -896,8 +907,8 @@ green #1FB
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* font-size on html for rem*/
@@ -905,6 +916,7 @@ html {
   font-family: Texta, sans-serif;
   font-size: 17px;
   line-height: 1.5;
+  background-color: white;
 }
 
 html.export {
@@ -914,7 +926,7 @@ html.export {
 
 body {
   color: #d0cece;
-  background: #ffffff;
+  /*background: #ffffff;*/
 }
 
 /* ---- links ---- */
@@ -944,17 +956,20 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 0.2em;
   margin-top: 5.0em;
   margin-left: .2em;
-  color: rgb(0, 80, 112);
+  color: #E9E9E9;
 }
 
 h1:first-child {
   /*margin: 1em auto;*/
-  margin-top: 1em;
-  margin-bottom: .5em;
+  margin-top: .75em;
+  /*margin-bottom: .5em;*/
+  margin-right: .5em;
+  display: inline;
+  float: right;
 }
 
 h2 {
@@ -974,10 +989,37 @@ h4 {
   font-size: 1.1em;
 }
 
+#pageTopper{
+  position: fixed;
+  /*top: 0;*/
+  /*margin-bottom: 50px;*/
+  bottom: 0;
+
+  z-index: 102;
+  background-color: #CDCDCD;
+  width: 100%;
+
+  /*border-bottom: 10px solid #88BBD6;*/
+  margin-left: -20px;
+  padding-left: 20px;
+  margin-top: 10px
+}
+
+#pageTopper p {
+  display: inline;
+  margin-bottom: 5px;
+
+}
+
 /* ---- filters list ---- */
 #filters {
-  margin-left: .4em;
-  margin-right: 2em;
+  /*margin-left: .4em;*/
+  /*margin-right: 2em;*/
+  width: 103%;
+  margin-left: -20px;
+  /*  position: fixed;
+    top: 0;
+    z-index: 102;*/
 }
 
 /* ---- lists ---- */
@@ -1102,7 +1144,7 @@ code .isotope_keyword { color: #0FF; text-decoration: underline; }
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
-    url('../fonts/2D333F_0_0.woff') format('woff');
+  url('../fonts/2D333F_0_0.woff') format('woff');
 }
 
 /* Texta Italic */
@@ -1111,38 +1153,38 @@ code .isotope_keyword { color: #0FF; text-decoration: underline; }
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
-    url('../fonts/2D333F_1_0.woff') format('woff');
+  url('../fonts/2D333F_1_0.woff') format('woff');
 }
 
 /* Texta Regular */
 @font-face {
   font-family: 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
-    url('../fonts/2D333F_2_0.woff') format('woff');
+  url('../fonts/2D333F_2_0.woff') format('woff');
 }
 
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.woff') format('woff'),
+  url('../fonts/icomoon.ttf') format('truetype'),
+  url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	font-style: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
@@ -1152,23 +1194,23 @@ you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
 .icon {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 .icon-file-download:before {
-	content: "\e001";
+  content: "\e001";
 }
 .icon-folder-download:before {
-	content: "\e002";
+  content: "\e002";
 }
 .icon-github:before {
-	content: "\e000";
+  content: "\e000";
 }
 
 /* main
@@ -1250,9 +1292,9 @@ you can use the generic selector below, but it's slower:
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
   -webkit-transition: width 0.4s, height 0.4s;
-     -moz-transition: width 0.4s, height 0.4s;
-       -o-transition: width 0.4s, height 0.4s;
-          transition: width 0.4s, height 0.4s;
+  -moz-transition: width 0.4s, height 0.4s;
+  -o-transition: width 0.4s, height 0.4s;
+  transition: width 0.4s, height 0.4s;
 }
 
 .animate-item-size-item:hover .animate-item-size-item__content {
@@ -1460,41 +1502,41 @@ you can use the generic selector below, but it's slower:
 }
 
 /*.element-item > * {*/
-  /*margin: 0;*/
-  /*padding: 0;*/
+/*margin: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /*.element-item .name {*/
-  /*position: absolute;*/
+/*position: absolute;*/
 
-  /*left: 10px;*/
-  /*top: 60px;*/
-  /*text-transform: none;*/
-  /*letter-spacing: 0;*/
-  /*font-size: 0.8em;*/
-  /*font-weight: normal;*/
+/*left: 10px;*/
+/*top: 60px;*/
+/*text-transform: none;*/
+/*letter-spacing: 0;*/
+/*font-size: 0.8em;*/
+/*font-weight: normal;*/
 /*}*/
 
 /*.element-item .symbol {*/
-  /*position: absolute;*/
-  /*left: 10px;*/
-  /*top: 0px;*/
-  /*font-size: 2.8em;*/
-  /*font-weight: bold;*/
-  /*color: white;*/
+/*position: absolute;*/
+/*left: 10px;*/
+/*top: 0px;*/
+/*font-size: 2.8em;*/
+/*font-weight: bold;*/
+/*color: white;*/
 /*}*/
 
 /*.element-item .number {*/
-  /*position: absolute;*/
-  /*right: 8px;*/
-  /*top: 5px;*/
+/*position: absolute;*/
+/*right: 8px;*/
+/*top: 5px;*/
 /*}*/
 
 /*.element-item .weight {*/
-  /*position: absolute;*/
-  /*left: 10px;*/
-  /*top: 76px;*/
-  /*font-size: 0.8em;*/
+/*position: absolute;*/
+/*left: 10px;*/
+/*top: 76px;*/
+/*font-size: 0.8em;*/
 /*}*/
 
 /*.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }*/
@@ -1535,7 +1577,7 @@ you can use the generic selector below, but it's slower:
   background: #1FB;
 }
 
-/* 
+/*
 ------------------------- */
 
 .duo--legal__plain {
@@ -2019,6 +2061,10 @@ you can use the generic selector below, but it's slower:
 /* in-use-grid
 ------------------------- */
 
+/*.in-use-grid {
+  margin-top: 75px;
+}*/
+
 .in-use-grid .grid-sizer,
 .in-use-grid__item { width: 23.5%; }
 .in-use-grid .gutter-sizer { width: 2%; }
@@ -2028,26 +2074,31 @@ you can use the generic selector below, but it's slower:
   float: left;
   /*margin-bottom: 20px;*/
   /*border-radius: 5px;*/
-  box-shadow: 3px 5px 5px #d6d4d4;;
+  /*box-shadow: 3px 5px 5px #d6d4d4;*/
 }
 
 .in-use-grid .logo{
-  background: rgb(0, 80, 112);
+  /*background: rgb(0, 80, 112);*/
+  background: #E9E9E9;
 }
 
 .in-use-grid .artDirection{
-  background: rgb(25, 73, 112);
+  /*background: rgb(25, 73, 112);*/
+  background: #99D3DF;
 }
 
 .in-use-grid .print{
-   background: rgb(0, 102, 112);
- }
+  /*background: rgb(0, 102, 112);*/
+  background: #88BBD6;
+}
 
 .in-use-grid .leather{
-  background: rgb(6, 101, 90);
+  /*background: rgb(6, 101, 90);*/
+  background: #CDCDCD;
 }
 
 .in-use-grid__item__title {
+  display: none;
   margin: 0;
   padding: 10px;
   color: rgba(255, 255, 255, 0.5)
@@ -2125,7 +2176,7 @@ you can use the generic selector below, but it's slower:
   font-size: 1.2rem;
   pointer-events: none;
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 @charset "UTF-8";
@@ -2189,7 +2240,7 @@ you can use the generic selector below, but it's slower:
     padding: 3px 20px;
   }
 
-   /* indent h3 and h4 items */
+  /* indent h3 and h4 items */
   .page-nav__item--h3 a,
   .page-nav__item--h4 a {
     padding-left: 30px;
@@ -2281,7 +2332,7 @@ you can use the generic selector below, but it's slower:
   .site-nav__item__link {
     padding: 7px 20px;
   }
-  
+
 }
 
 /* sub-nav
@@ -2334,7 +2385,7 @@ you can use the generic selector below, but it's slower:
   .sub-nav__item {
     font-size: 1.0rem;
   }
-  
+
 
 }
 
@@ -2392,19 +2443,19 @@ you can use the generic selector below, but it's slower:
   margin: 5px;
   float: left;
 }
- 
+
 .color-shape.round {
   border-radius: 35px;
 }
- 
+
 .color-shape.big.round {
   border-radius: 75px;
 }
- 
+
 .color-shape.red { background: red; }
 .color-shape.blue { background: blue; }
 .color-shape.yellow { background: yellow; }
- 
+
 .color-shape.wide, .color-shape.big { width: 150px; }
 .color-shape.tall, .color-shape.big { height: 150px; }
 
@@ -2511,18 +2562,18 @@ you can use the generic selector below, but it's slower:
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 /*@media screen and (max-height: 450px) {*/
-  /*.sidenav {padding-top: 15px;}*/
-  /*.sidenav a {font-size: 18px;}*/
+/*.sidenav {padding-top: 15px;}*/
+/*.sidenav a {font-size: 18px;}*/
 /*}*/
 
 
 /*Tablet Screen Size*/
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 768px)  {
 
   .in-use-grid .grid-sizer,
   .in-use-grid__item {
-      width: 45%;
-      margin-left: 2%;
+    width: 45%;
+    margin-left: 2%;
   }
   .in-use-grid .gutter-sizer { width: 2%; }
 
@@ -2545,11 +2596,11 @@ you can use the generic selector below, but it's slower:
     border-radius: 0;
   }
 
-/*}*/
+}
 
 
-/*/!*Phone Screen Size*!/*/
-/*@media only screen and (max-width: 500px)  {*/
+/*Phone Screen Size*/
+@media only screen and (max-width: 500px)  {
 
   #filters {
     margin: 0;
@@ -2563,8 +2614,8 @@ you can use the generic selector below, but it's slower:
   }
 
   /*.button {*/
-    /*width: 150px;*/
-    /*height: 50px;*/
+  /*width: 150px;*/
+  /*height: 50px;*/
 
   /*}*/
 
@@ -2573,21 +2624,21 @@ you can use the generic selector below, but it's slower:
   /*.in-use-grid .gutter-sizer { width: 2%; }*/
 
   /*.in-use-grid__item {*/
-    /*background: #161615;*/
-    /*float: left;*/
-    /*margin-bottom: 20px;*/
-    /*border-radius: 5px;*/
+  /*background: #161615;*/
+  /*float: left;*/
+  /*margin-bottom: 20px;*/
+  /*border-radius: 5px;*/
   /*}*/
 
   /*.in-use-grid__item__title {*/
-    /*margin: 0;*/
-    /*padding: 10px;*/
+  /*margin: 0;*/
+  /*padding: 10px;*/
   /*}*/
 
   /*.in-use-grid__item__image {*/
-    /*display: block;*/
-    /*max-width: 100%;*/
-    /*border-radius: 0 0 5px 5px;*/
+  /*display: block;*/
+  /*max-width: 100%;*/
+  /*border-radius: 0 0 5px 5px;*/
   /*}*/
 
 
@@ -2624,7 +2675,7 @@ you can use the generic selector below, but it's slower:
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 25px;
     font-size: 36px;
     margin-left: 50px;
   }
@@ -2660,14 +2711,15 @@ you can use the generic selector below, but it's slower:
   }
 
   .shuffle-button:hover {
-    background-color: rgba(0, 80, 112, 1);
+    background-color: #005070;
   }
 
+
   /*span.filterButton {*/
-    /*margin-left: -118px;*/
-    /*-ms-transform: rotate(90deg); /!* IE 9 *!/*/
-    /*-webkit-transform: rotate(90deg); /!* Chrome, Safari, Opera *!/*/
-    /*transform: rotate(90deg);*/
+  /*margin-left: -118px;*/
+  /*-ms-transform: rotate(90deg); /!* IE 9 *!/*/
+  /*-webkit-transform: rotate(90deg); /!* Chrome, Safari, Opera *!/*/
+  /*transform: rotate(90deg);*/
   /*}*/
 
 }

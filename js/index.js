@@ -42,6 +42,7 @@ $('#filters').on( 'click', 'button', function() {
   // use filterFn if matches value
   filterValue = filterFns[ filterValue ] || filterValue;
   $grid.isotope({ filter: filterValue });
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 
 // bind sort button click
@@ -83,7 +84,7 @@ $('.shuffle-button').on( 'click', function() {
 function openNav() {
   document.getElementById("filters").style.width = "50%";
   //document.getElementById("main").style.marginLeft = "150px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
