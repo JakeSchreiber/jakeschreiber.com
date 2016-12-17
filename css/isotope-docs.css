@@ -1,5 +1,3 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
@@ -435,7 +433,7 @@ textarea {
   height: 25px;
   padding: 0px 15px;
   /*margin-bottom: 10px;*/
-  background-color: #99D3DF;
+  background-color: #76323F;
   /*background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.25) );*/
   border: 0px solid #CCC;
   color: white;
@@ -445,26 +443,32 @@ textarea {
 }
 
 .shuffle-button {
-  display: inline-block;
+  /*display: inline-block;*/
+  position: fixed;
+  top: 0;
+  margin-left: -20px;
   /*height: 25px;*/
   padding: 6px 15px 2px 15px;
   /*margin-bottom: 10px;*/
-  margin-left: .4em;
-  margin-top: .5em;
-  background: #88BBD6;
+  /*  margin-left: .4em;
+    margin-top: .5em;*/
+  background: black;
+  width: 100%;
+
   /*background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );*/
   border: 0px solid #CCC;
   color: white;
-  border-radius: 5px 5px 0px 0px;
+  /*border-radius: 5px 5px 0px 0px;*/
   cursor: pointer;
   /*float: right;*/
 }
 
 
-.button.shuffle-button {
+/*.button.shuffle-button {
   text-align: top;
   margin-top: -5px;
-}
+}*/
+
 
 .closebtn {
   display: none;
@@ -517,393 +521,7 @@ textarea {
 /*.button-group .button:first-child { border-radius: 5px 0 0 5px; }*/
 /*.button-group .button:last-child { border-radius: 0 5px 5px 0; }*/
 
-/* commercial-license-agreement
-------------------------- */
 
-.commercial-license-agreement h3 {
-  counter-increment: cla-h3;
-  counter-reset: cla-part;
-}
-
-.commercial-license-agreement h3:before {
-  content: counter(cla-h3) '.';
-  margin-right: 0.25rem;
-  color: #888;
-  font-family: 'Texta', sans-serif;
-}
-
-.cla__part {
-  counter-increment: cla-part;
-}
-
-.cla__part:before,
-.cla__definitions-list li:before {
-  content: counter(cla-h3) '.' counter(cla-part) '.';
-  color: #888;
-  margin-right: 0.25rem;
-}
-
-.cla__definitions-list {
-  list-style: none;
-  padding-left: 2.6rem;
-}
-
-.cla__definitions-list li {
-  text-indent: -1.5rem;
-  margin-bottom: 0.5rem;
-  counter-increment: cla-definitions-item;
-}
-
-.cla__definitions-list li:before {
-  content: counter(cla-h3) '.' counter(cla-definitions-item) '.';
-}
-
-/* buy-button
-------------------------- */
-
-.buy-button {
-  display: block;
-  margin-bottom: 10px;
-  line-height: 1.3rem;
-  border-radius: 8px;
-  padding: 10px 100px 10px 10px;
-  position: relative;
-  text-align: center;
-}
-
-.buy-button__project,
-.buy-button__title,
-.buy-button__license {
-}
-
-.buy-button__title {
-  font-weight: bold;
-}
-
-.buy-button__for {
-  display: block;
-  font-style: italic;
-}
-
-.buy-button__price {
-  font-size: 1.6rem;
-  background: #888;
-  color: white;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 80px;
-  border-radius: 0 8px 8px 0;
-  text-align: center;
-  line-height: 64px;
-}
-
-.buy-button__price__dollar {
-  font-size: 1.4rem;
-  margin-right: 3px;
-  vertical-align: top;
-}
-
-@media screen and (min-width: 768px) {
-
-  /* ---- buy-button-trio ---- */
-
-  .buy-button-trio {
-    margin-top: 40px;
-    margin-bottom: 50px;
-  }
-
-  .buy-button-trio:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  /* ---- buy-button-trio buy-button ---- */
-
-  .buy-button-trio .buy-button {
-    float: left;
-    width: 31.33%;
-    margin-right: 3%;
-  }
-
-  .buy-button-trio .buy-button:nth-child(3) {
-    margin-right: 0;
-  }
-
-  .buy-button-trio .buy-button {
-    transition: transform 0.2s;
-    padding: 20px 0 0;
-  }
-
-  .buy-button-trio .buy-button > span {
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .buy-button-trio .buy-button__project,
-  .buy-button-trio .buy-button__license {
-    font-size: 1.1rem;
-  }
-
-  .buy-button-trio .buy-button__title {
-    font-size: 1.9rem;
-    line-height: 1.2;
-  }
-
-  .buy-button-trio .buy-button__license {
-    margin-bottom: 15px;
-  }
-
-  .buy-button-trio .buy-button__for {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-  }
-
-  .buy-button-trio .buy-button__price {
-    position: relative;
-    width: auto;
-    font-size: 2.4rem;
-    line-height: 1.3;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-radius: 0 0 8px 8px;
-  }
-
-  .buy-button-trio .buy-button__was-price {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .buy-button-trio .buy-button__price__dollar {
-    position: relative;
-    top: 8px;
-  }
-
-
-  .buy-button-trio .buy-button:hover {
-    transform: translateY(-5px);
-  }
-
-}
-
-/* duo
-two columns for large devices
-------------------------- */
-
-.duo:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.duo__cell {
-  margin-bottom: 10px;
-}
-
-/* --- duo--legal --- */
-
-
-.duo--legal__plain {
-  padding: 0 0.8rem;
-  background: #FAFAFA;
-  color: #888;
-}
-
-.duo--legal--first .duo--legal__official:before,
-.duo--legal--first .duo--legal__plain:before {
-  display: block;
-  padding-top: 0.5rem;
-  font-size: 0.88rem;
-  color: #888;
-}
-
-.duo--legal--first .duo--legal__official:before {
-  content: 'Official legal copy'
-}
-
-.duo--legal--first  .duo--legal__plain:before {
-  content: 'Plain English'
-}
-
-
-@media screen and ( min-width: 768px ) {
-
-  .duo__cell {
-    float: left;
-    width: 48.5%;
-  }
-
-  .duo__cell:first-child {
-    margin-right: 3%;
-  }
-
-  .duo__cell--license-option p { margin-top: 0; }
-
-}
-
-/* fizzy-bear-shirt
-------------------------- */
-
-.fizzy-bear-shirt {
-  margin: 40px 0;
-}
-
-.fizzy-bear-shirt__title {
-  font-size: 1.6rem;
-}
-
-.fizzy-bear-shirt__image {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-/* metafizzy-brand
-------------------------- */
-
-.metafizzy-logo {
-  width: 60px;
-  height: auto;
-}
-
-.metafizzy-wordmark {
-  width: 200px;
-  height: auto;
-}
-
-/* showcase-item
-------------------------- */
-
-.showcase-item__link {
-  display: block;
-  padding: 10px;
-  background: white;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background: #DDD;
-}
-
-.showcase-item__link:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.showcase-item__image {
-  width: 80px;
-  float: left;
-  display: block;
-}
-
-.showcase-item__image svg {
-  display: block;
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
-}
-
-.showcase-item__text {
-  float: left;
-  width: calc( 100% - 120px );
-  padding-left: 10px;
-}
-
-.showcase-item__title {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.showcase-item__description {
-  margin: 0;
-}
-
-@media screen and ( min-width: 768px ) {
-
-  .showcase-item {
-    float: left;
-    width: 48.5%;
-  }
-
-  .showcase-item:nth-child(2n+1) {
-    margin-right: 3%;
-  }
-
-  .showcase-item__image {
-    width: 120px;
-  }
-
-  .showcase-item__text {
-    padding-left: 20px;
-  }
-
-  .showcase-item__title {
-    font-size: 2.0rem;
-  }
-
-  .showcase-item__description {
-    font-size: 1.2rem;
-    line-height: 1.2;
-  }
-
-}
-
-/* showcase
-------------------------- */
-
-.showcase-item-list {
-  padding: 0;
-  list-style: none;
-}
-
-.showcase-item-list:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* site-footer
-------------------------- */
-
-.site-footer {
-  padding: 40px 0;
-  margin-top: 60px;
-}
-
-.site-footer__copy {
-  font-size: 1.2rem;
-}
-
-.site-footer .twitter-logo {
-  width: 1.3rem;
-  height: 1.3rem;
-  vertical-align: middle;
-}
-
-/* flickity-illo
-------------------------- */
-
-.flickity-illo { background: #ED0; }
-
-/* isotope-illo
-------------------------- */
-
-.isotope-illo { background: #222; }
-
-/*
-
-COLORS
-
-dark brown #262524
-dark dark brown #161615
-link orange #FB4
-blue #4BF
-green #1FB
-
-
-*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -916,7 +534,7 @@ html {
   font-family: Texta, sans-serif;
   font-size: 17px;
   line-height: 1.5;
-  background-color: white;
+  background-color: #E9E9E9;
 }
 
 html.export {
@@ -996,13 +614,14 @@ h4 {
   bottom: 0;
 
   z-index: 102;
-  background-color: #CDCDCD;
+  background-color: #565656;
   width: 100%;
 
-  /*border-bottom: 10px solid #88BBD6;*/
+  border-bottom: 23px solid black;
   margin-left: -20px;
   padding-left: 20px;
-  margin-top: 10px
+  margin-top: 10px;
+
 }
 
 #pageTopper p {
@@ -1028,106 +647,6 @@ ul, ol {
   padding-left: 1.8em;
 }
 
-/* ---- code ---- */
-
-pre, code {
-  font-family: Consolas, Menlo, monospace;
-  font-size: 14px;
-  background: #161615;
-  color: white;
-}
-
-pre {
-  padding: 0.8em;
-  border-radius: 5px;
-  white-space: pre-wrap;
-}
-
-code {
-  padding: 0.2em 0.3em;
-  line-height: 1.2;
-  border-radius: 3px;
-}
-
-pre code {
-  padding: 0;
-  line-height: 1.5;
-  background: none;
-}
-
-a code {
-  background: #A2C;
-  color: white;
-}
-
-a:hover code {
-  color: white;
-  background: #D26;
-}
-
-.clearfix:after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
-@media screen and ( min-width: 768px ) {
-
-  html {
-    font-size: 19px;
-  }
-
-  html.export { font-size: 16px; }
-
-  pre, code, kbd {
-    font-size: 15px;
-  }
-
-}
-
-/* Code
-------------------------- */
-
-
-
-code .string,
-code .tag .value { color: #0C4; }
-code .number, /* integer */
-code .cp, /* doctype */
-code .literal { color: #38F; } /*boolean*/
-code .keyword { color: #F73; } /* keyword */
-code .kd, /* storage */
-code .attribute { color: #DC8; } /* markup attribute */
-code .title { color: #9CF; }
-code .params { color: #98D; }
-code .regexp  { color: #FC8; } /* regex */
-code .o  { color: #F63; }   /* operator */
-code .nb { color: #AA97AC;} /* support */
-code .built_in { color: #DD8; }
-
-/* comment */
-code .comment { color: #999; font-style: italic; }
-
-code .tag { color: #6CF; } /* Markup open tag */
-
-code .id { color: #ABC; } /* css id */
-code .class,
-code .selector-class { color: #C95; }  /* CSS class */
-code .rules { color: #FED; }
-code .m  { color: #DE8E50; } /* CSS value */
-code .nd { color: #9FAD7E; } /* CSS pseudo selector */
-code .hexcolor { color: #F63; }
-code .at_rule { color: #088; }
-
-
-/* isotope keywords */
-code .isotope_var { color: #F3F; }
-code .jquery_var { color: #DF8; }
-code .isotope_keyword { color: #0FF; text-decoration: underline; }
-
-.code-display code {
-  font-size: 18px;
-}
 
 /* web fonts
 ------------------------- */
@@ -1262,14 +781,6 @@ you can use the generic selector below, but it's slower:
 }
 
 
-/* ---- instruction ---- */
-
-.instruction {
-  font-size: 18px;
-  margin-bottom: 0.2em;
-  color: #888;
-}
-
 /* ---- notification ---- */
 
 /* animate-item-size-item
@@ -1379,66 +890,6 @@ you can use the generic selector below, but it's slower:
   .bootstrap-3__col-md-6 { width: 50%; }
 }
 
-/* call out
-------------------------- */
-
-.call-out {
-  border-top: 2px solid #FB4;
-  border-bottom: 2px solid #FB4;
-  padding-left: 40px;
-  position: relative;
-  margin: 20px 0;
-}
-
-/* (i) */
-.call-out:before {
-  content: 'i';
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 5px;
-  top: 20px;
-  background: #FB4;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  font-family: Consolas, Georgia, serif;
-  font-style: italic;
-}
-
-.call-out h2 {
-  margin-top: 0;
-  padding-top: 10px;
-  border-top: none;
-}
-
-.call-out--chill { border-color: #1FB; }
-.call-out--chill:before { background: #1FB; }
-
-@media screen and (min-width: 768px) {
-
-  .call-out {
-    border: 2px solid #FB4;
-    padding: 10px 20px 10px 80px;
-    border-radius: 6px;
-    position: relative;
-    margin: 20px 0;
-  }
-
-  .call-out--chill { border-color: #1FB; }
-
-  .call-out:before {
-    width: 40px;
-    height: 40px;
-    left: 20px;
-    top: 30px;
-    font-size: 1.9em;
-    line-height: 46px;
-  }
-
-}
-
 /* container
 ------------------------- */
 
@@ -1479,15 +930,7 @@ you can use the generic selector below, but it's slower:
 
 }
 
-/* edit-demo
-------------------------- */
-
-.edit-demo {
-  clear: both;
-  font-size: 0.92em;
-}
-
-/* element-item
+/* element-item Set border size of element
 ------------------------- */
 
 .element-item {
@@ -1496,59 +939,10 @@ you can use the generic selector below, but it's slower:
   /*width: 100px;*/
   /*height: 100px;*/
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   /*background: #888;*/
   /*color: #262524;*/
 }
-
-/*.element-item > * {*/
-/*margin: 0;*/
-/*padding: 0;*/
-/*}*/
-
-/*.element-item .name {*/
-/*position: absolute;*/
-
-/*left: 10px;*/
-/*top: 60px;*/
-/*text-transform: none;*/
-/*letter-spacing: 0;*/
-/*font-size: 0.8em;*/
-/*font-weight: normal;*/
-/*}*/
-
-/*.element-item .symbol {*/
-/*position: absolute;*/
-/*left: 10px;*/
-/*top: 0px;*/
-/*font-size: 2.8em;*/
-/*font-weight: bold;*/
-/*color: white;*/
-/*}*/
-
-/*.element-item .number {*/
-/*position: absolute;*/
-/*right: 8px;*/
-/*top: 5px;*/
-/*}*/
-
-/*.element-item .weight {*/
-/*position: absolute;*/
-/*left: 10px;*/
-/*top: 76px;*/
-/*font-size: 0.8em;*/
-/*}*/
-
-/*.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }*/
-/*.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }*/
-/*.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }*/
-/*.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }*/
-/*.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }*/
-/*.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }*/
-/*.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }*/
-/*.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }*/
-/*.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }*/
-/*.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }*/
 
 /* button overwrites
 ------------------------- */
@@ -1564,7 +958,7 @@ you can use the generic selector below, but it's slower:
 /* buy-button
 ------------------------- */
 
-.buy-button {
+/*.buy-button {
   background: #161514;
   color: #1FB;
 }
@@ -1576,7 +970,7 @@ you can use the generic selector below, but it's slower:
 .buy-button:hover .buy-button__price {
   background: #1FB;
 }
-
+*/
 /*
 ------------------------- */
 
@@ -1586,140 +980,12 @@ you can use the generic selector below, but it's slower:
   color: #AAA;
 }
 
-/* showcase overwrites
-------------------------- */
-
-.showcase-item__link {
-  background: #262524;
-  color: #4BF;
-}
-
-.showcase-item__link:hover {
-  background: #1FB;
-  color: #262524;
-}
-
-.showcase-item__title { font-weight: bold; }
-
-.huebee-illo__line { stroke: white; }
-
-/* site-footer overwrites
-------------------------- */
-
-.site-footer {
-  background: #161514;
-  position: relative;
-}
-
-
-.fizzy-bear-shirt__link {
-  padding: 10px;
-  border-radius: 8px;
-  background: #262524;
-  color: #4BF;
-  display: block;
-}
-
-.fizzy-bear-shirt__link:hover {
-  background: #1FB;
-  color: #262524;
-}
-
-.fizzy-bear-shirt__title {
-  margin-top: 0;
-  font-weight: bold;
-}
-
-.fizzy-bear-shirt__image { border-radius: 5px; }
-
-.site-footer .twitter-logo { fill: #FB4; }
-.site-footer a:hover .twitter-logo { fill: #1BF; }
-
-
-/* ----  ---- */
-
-.site-footer .metafizzy-wordmark path { fill: #1BF; }
-
-.site-footer .metafizzy-logo__stripe1,
-.site-footer .metafizzy-logo__stripe2,
-.site-footer .metafizzy-logo__stripe3,
-.site-footer .metafizzy-logo__stripe4 { fill: #1BF; }
-
-.site-footer a:hover .metafizzy-wordmark path { fill: white; }
-
-.site-footer a:hover .metafizzy-logo__stripe1 { fill: #C25; }
-.site-footer a:hover .metafizzy-logo__stripe2 { fill: #E62; }
-.site-footer a:hover .metafizzy-logo__stripe3 { fill: #EA0; }
-.site-footer a:hover .metafizzy-logo__stripe4 { fill: #19F; }
-
-/* gh-button
-------------------------- */
-
-.gh-button {
-  display: inline-block;
-  background: none;
-  border: none;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #333;
-}
-
-.gh-button__title,
-.gh-button__stat {
-  float: left;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  padding: 5px 10px;
-  border: 1px solid #d5d5d5;
-}
-
-.gh-button__icon {
-  height: 21px;
-  fill: #333;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-.gh-button__title {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  border-radius: 4px 0 0 4px;
-}
-
-.gh-button__icon--github-logo {
-  margin-right: 0.2em;
-}
-
-.gh-button__stat {
-  border-left: 0;
-  border-radius: 0 4px 4px 0;
-  background: white;
-}
-
-.gh-button:hover { color: #333; }
-
-.gh-button:hover .gh-button__title {
-  background-color: #ddd;
-  background-image: linear-gradient(#eee, #ddd);
-}
-
-.gh-button:hover .gh-button__stat {
-  color: #4078c0;
-}
-
-.gh-button:hover .gh-button__icon--star {
-  fill: #4078c0;
-}
-
-/* grid
-------------------------- */
-
 .grid {
   /*border: 2px solid #484542;*/
   background: hsla(0, 0%, 0%, 0);
   position: relative;
   margin: auto;
-  height: inherit;
+  height: auto;
   /*padding: 3%;*/
 }
 
@@ -1753,22 +1019,6 @@ you can use the generic selector below, but it's slower:
   height: 334px;
 }
 
-/* ---- static banner ---- */
-
-.grid--has-banner {
-  position: relative;
-}
-
-.static-banner {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  background: hsla(210, 100%, 50%, 0.8);
-  z-index: 1;
-  padding: 2px 20px;
-  color: white;
-  pointer-events: none;
-}
 
 /* ---- fixed-width ---- */
 
@@ -1832,15 +1082,6 @@ you can use the generic selector below, but it's slower:
   cursor: pointer;
 }
 
-/* ---- insert demo ---- */
-
-.grid-item .number {
-  line-height: 50px;
-  text-align: center;
-  color: #333;
-  margin: 0;
-  font-size: 1.3rem;
-}
 
 /* ---- fluid-5-col ---- */
 
@@ -1953,110 +1194,6 @@ you can use the generic selector below, but it's slower:
 .grid-item--filter-block-red { background: #D00; }
 .grid-item--filter-block-blue { background: #19F; }
 
-/* grid-splash-item
-------------------------- */
-
-.grid-splash-item {
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  padding: 20px;
-  background: red;
-  color: white;
-  font-size: 3.0rem;
-  font-weight: bold;
-  line-height: 1.0;
-}
-
-.grid-splash-item--width2 { width: 210px; }
-.grid-splash-item--height2 { height: 210px; }
-
-.grid-splash-item:nth-child(10n+0) { background: hsl(   0, 100%, 50%); }
-.grid-splash-item:nth-child(10n+1) { background: hsl(  36, 100%, 50%); }
-.grid-splash-item:nth-child(10n+2) { background: hsl(  72, 100%, 50%); }
-.grid-splash-item:nth-child(10n+3) { background: hsl( 108, 100%, 50%); }
-.grid-splash-item:nth-child(10n+4) { background: hsl( 144, 100%, 50%); }
-.grid-splash-item:nth-child(10n+5) { background: hsl( 180, 100%, 50%); }
-.grid-splash-item:nth-child(10n+6) { background: hsl( 216, 100%, 50%); }
-.grid-splash-item:nth-child(10n+7) { background: hsl( 252, 100%, 50%); }
-.grid-splash-item:nth-child(10n+8) { background: hsl( 288, 100%, 50%); }
-.grid-splash-item:nth-child(10n+9) { background: hsl( 324, 100%, 50%); }
-
-/* hero
-------------------------- */
-
-
-.hero__title {
-  font-size: 4.6rem;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.1em;
-}
-
-.hero__tagline {
-  font-size: 1.6rem;
-  margin: 0 0 0.8em;
-  line-height: 1.2;
-}
-
-
-/* ---- hero__big-button ---- */
-
-.hero__big-button {
-  display: block;
-  position: relative;
-  padding: 10px;
-  font-size: 1.2rem;
-  background: #161615;
-  color: #FB4;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.hero__button-icon {
-  vertical-align: bottom;
-  width: 40px;
-  height: 40px;
-  margin-right: 6px;
-}
-
-.hero__button-icon path {
-  fill: #FB4;
-}
-
-/* hover */
-.hero__big-button:hover {
-  background: #4FB;
-  color: #222;
-}
-
-.hero__big-button:hover .hero__button-icon path {
-  fill: #222;
-}
-
-/* ---- desktop ---- */
-
-@media screen and ( min-width: 960px ) {
-
-  .hero__title {
-    font-size: 7.0rem;
-  }
-
-  .hero__tagline {
-    font-size: 2.1rem;
-  }
-
-  /* buttons */
-
-  .hero__big-button {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    padding: 20px 20px;
-    margin-bottom: 40px;
-  }
-
-}
 
 /* in-use-grid
 ------------------------- */
@@ -2072,29 +1209,39 @@ you can use the generic selector below, but it's slower:
 .in-use-grid__item {
   background: #ffffff;
   float: left;
+  /*transition: all .2s ease-in-out;*/
   /*margin-bottom: 20px;*/
   /*border-radius: 5px;*/
   /*box-shadow: 3px 5px 5px #d6d4d4;*/
 }
 
+.in-use-grid__item:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 32px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 32px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 32px 2px rgba(0,0,0,0.75);
+  z-index: 101;
+}
+
 .in-use-grid .logo{
   /*background: rgb(0, 80, 112);*/
-  background: #E9E9E9;
+  background: #D7CEC7;
 }
 
 .in-use-grid .artDirection{
   /*background: rgb(25, 73, 112);*/
-  background: #99D3DF;
+  background: #565656;
 }
 
 .in-use-grid .print{
   /*background: rgb(0, 102, 112);*/
-  background: #88BBD6;
+  background: #76323F;
 }
 
 .in-use-grid .leather{
   /*background: rgb(6, 101, 90);*/
-  background: #CDCDCD;
+  background: #C09F80;
 }
 
 .in-use-grid__item__title {
@@ -2159,27 +1306,6 @@ you can use the generic selector below, but it's slower:
   }
 
 }
-
-/* notification
-------------------------- */
-
-.notification {
-  max-width: none;
-  display: none; /* hide by default */
-  position: fixed;
-  z-index: 20; /* above most stuff */
-  bottom: 0px;
-  right: 0px;
-  background: #A2C;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1.2rem;
-  pointer-events: none;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-@charset "UTF-8";
 
 /* page-nav
 ------------------------- */
@@ -2246,24 +1372,6 @@ you can use the generic selector below, but it's slower:
     padding-left: 30px;
   }
 
-}
-
-/* refactor-shirt
-------------------------- */
-
-.refactor-shirt {
-  margin: 40px 0;
-}
-
-.refactor-shirt__title {
-  font-size: 1.6rem;
-}
-
-.refactor-shirt__image {
-  display: block;
-  width: 100%;
-  max-width: 1000px;
-  margin-bottom: 10px;
 }
 
 /* site-nav
@@ -2335,59 +1443,6 @@ you can use the generic selector below, but it's slower:
 
 }
 
-/* sub-nav
-------------------------- */
-
-.sub-nav {
-  display: none;
-}
-
-@media screen and ( min-width: 768px ) {
-
-  .sub-nav-parent {
-    position: relative;
-    max-height: 2em;
-  }
-
-  .sub-nav {
-    display: block; /* visible on desktop */
-    position: absolute;
-    left: 100%;
-    top: 0;
-    list-style: none;
-    width: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: width 0.2s, opacity 0.2s;
-    margin: 0;
-    padding: 0;
-  }
-
-  .sub-nav-parent:hover .sub-nav {
-    opacity: 1;
-    width: 190px;
-    z-index: 2; /* on top of stuff */
-  }
-
-  .sub-nav-parent:hover,
-  .sub-nav {
-    background: #161615;
-  }
-
-  .sub-nav-parent > a:after { content: '...'; }
-  .sub-nav-parent:hover > a:after { content: none; }
-
-  .sub-nav__item__link {
-    display: block;
-    padding: 5px 10px;
-  }
-
-  .sub-nav__item {
-    font-size: 1.0rem;
-  }
-
-
-}
 
 /* ui-group
 ------------------------- */
@@ -2485,87 +1540,6 @@ you can use the generic selector below, but it's slower:
   margin: 0;
 }
 
-/* stamp
-------------------------- */
-
-.stamp {
-  position: absolute;
-  width: 30%;
-  height: 60px;
-  background: orange;
-  border: 4px dotted #161615;
-}
-
-/* ---- stamp-option ---- */
-
-.stamp--stamp-option-stamp1 {
-  left: 30%;
-  top: 10px;
-  width: 20%;
-  height: 100px;
-}
-
-.stamp--stamp-option-stamp2 {
-  right: 10%;
-  top: 20px;
-  width: 70%;
-  height: 30px;
-}
-
-.stamp--packery {
-  right: 20%;
-  top: 80px;
-  width: 45%;
-  height: 90px;
-}
-
-/* stamp-methods
-------------------------- */
-
-.grid--stamp-methods .grid-item {
-  opacity: 0.8;
-}
-
-.stamp--stamp-methods {
-  left: 10px;
-  top: 10px;
-}
-/* vertical-list
-------------------------- */
-
-.vertical-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 2px solid #484542;
-  background: hsla(0, 0%, 0%, 0.15);
-}
-
-.vertical-list__item {
-  width: 100%;
-  border-top: 1px solid #484542;
-}
-
-.vertical-list__item > * {
-  display: inline-block;
-  padding: 3px 4px;
-}
-
-.vertical-list__item .name { width: 20%; }
-.vertical-list__item .symbol { width: 10%; }
-.vertical-list__item .weight { width: 15%; }
-.vertical-list__item .number { width: 10%; }
-.vertical-list__item .category { width: 25%; }
-
-
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-/*@media screen and (max-height: 450px) {*/
-/*.sidenav {padding-top: 15px;}*/
-/*.sidenav a {font-size: 18px;}*/
-/*}*/
-
 
 /*Tablet Screen Size*/
 @media only screen and (max-width: 768px) {
@@ -2573,34 +1547,6 @@ you can use the generic selector below, but it's slower:
     font-size: 90%;
   }
 }
-  /*.in-use-grid .grid-sizer,*/
-  /*.in-use-grid__item {*/
-    /*/!*width: 45%;*!/*/
-    /*margin-left: 2%;*/
-  /*}*/
-  /*.in-use-grid .gutter-sizer { width: 2%; }*/
-
-  /*.in-use-grid__item {*/
-    /*/!*background: #161615;*!/*/
-    /*float: left;*/
-    /*margin-bottom: 20px;*/
-    /*border-radius: 0;*/
-  /*}*/
-
-  /*.in-use-grid__item__title {*/
-    /*margin: 0;*/
-    /*display: none;*/
-    /*padding: 10px;*/
-  /*}*/
-
-  /*.in-use-grid__item__image {*/
-    /*display: block;*/
-    /*max-width: 100%;*/
-    /*border-radius: 0;*/
-  /*}*/
-
-/*}*/
-
 
 /*Phone Screen Size*/
 @media only screen and (max-width: 500px)  {
@@ -2623,34 +1569,6 @@ you can use the generic selector below, but it's slower:
     height: 4em;
     /*margin: 5px 0;*/
   }
-
-  /*.button {*/
-  /*width: 150px;*/
-  /*height: 50px;*/
-
-  /*}*/
-
-  /*.in-use-grid .grid-sizer,*/
-  /*.in-use-grid__item { width: 97%; }*/
-  /*.in-use-grid .gutter-sizer { width: 2%; }*/
-
-  /*.in-use-grid__item {*/
-  /*background: #161615;*/
-  /*float: left;*/
-  /*margin-bottom: 20px;*/
-  /*border-radius: 5px;*/
-  /*}*/
-
-  /*.in-use-grid__item__title {*/
-  /*margin: 0;*/
-  /*padding: 10px;*/
-  /*}*/
-
-  /*.in-use-grid__item__image {*/
-  /*display: block;*/
-  /*max-width: 100%;*/
-  /*border-radius: 0 0 5px 5px;*/
-  /*}*/
 
 
   /* The side navigation menu */
@@ -2712,25 +1630,23 @@ you can use the generic selector below, but it's slower:
     float: right;
     height: 50px;
     position: fixed;
+    top: initial;
     right: 0;
-    bottom: 0px;
+    bottom: 0;
     color: white;
-    background-color: #005070;
+    background-color: #76323F;
     z-index: 100;
     width: 50%;
     margin-left: 0;
   }
 
   .shuffle-button:hover {
-    background-color: #005070;
+    background-color: #76323F;
   }
 
+  #pageTopper h1:first-child {
+    display: none;
+  }
 
-  /*span.filterButton {*/
-  /*margin-left: -118px;*/
-  /*-ms-transform: rotate(90deg); /!* IE 9 *!/*/
-  /*-webkit-transform: rotate(90deg); /!* Chrome, Safari, Opera *!/*/
-  /*transform: rotate(90deg);*/
-  /*}*/
 
 }
